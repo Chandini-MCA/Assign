@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Zahimo Studio — Modern & Scalable Websites</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Accessible skip link -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Header / Nav -->
+  <header class="site-header" role="banner">
+    <div class="container nav-wrap">
+      <div class="brand">
+        <a href="#home" class="logo" aria-label="Zahimo Studio home">Zahimo</a>
+      </div>
+
+      <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="primary-navigation" aria-label="Toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+
+      <nav id="primary-navigation" class="primary-nav" role="navigation">
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="cta">
+        <a class="btn btn-primary" href="#contact">Get Started</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section id="home" class="hero" aria-label="Hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <h1>We build modern & scalable websites</h1>
+          <p class="lead">Pixel-perfect builds, smooth interactions, and responsive layouts that match your Figma design.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#services">Our Services</a>
+            <a class="btn btn-ghost" href="#about">Learn more</a>
+          </div>
+        </div>
+
+        <figure class="hero-image" aria-hidden="false">
+          <img src="./hero.png" alt="Illustration of web design workflow" width="560" height="360" />
+        </figure>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about-section" aria-labelledby="about-heading">
+      <div class="container">
+        <h2 id="about-heading">About Zahimo Studio</h2>
+        <p>We craft modern, responsive websites that combine creativity with technology. Our focus is on spacing, typography and color fidelity to match your Figma design.</p>
+        <p>We use semantic HTML and accessible patterns to ensure quality and performance across devices.</p>
+        <a class="btn" href="#contact">Get in touch</a>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="services-section" aria-labelledby="services-heading">
+      <div class="container">
+        <h2 id="services-heading">Our Services</h2>
+
+        <ul class="services-grid" role="list">
+          <li class="service-card">
+            <img src="./design.png" alt="UI/UX mockup icon" width="72" height="72" />
+            <h3>UI / UX Design</h3>
+            <p>Beautiful, pixel-accurate designs focused on usability and brand expression.</p>
+          </li>
+
+          <li class="service-card">
+            <img src="./dev.png" alt="Web development icon" width="72" height="72" />
+            <h3>Web Development</h3>
+            <p>Fast, scalable frontend and backend, optimized for performance and maintainability.</p>
+          </li>
+
+          <li class="service-card">
+            <img src="./responsive.png" alt="Responsive layout icon" width="72" height="72" />
+            <h3>Responsive Layout</h3>
+            <p>Layouts that adapt cleanly across mobile, tablet and desktop breakpoints.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="testimonials-section" aria-labelledby="testimonials-heading">
+      <div class="container">
+        <h2 id="testimonials-heading">What our clients say</h2>
+        <blockquote class="testimonial">
+          <p>“Zahimo built our website with great precision and style — exactly like the Figma design.”</p>
+          <footer>— Chandini</footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- Footer / Contact Section -->
+    <section id="contact" class="contact-section" aria-labelledby="contact-heading">
+      <div class="container contact-grid">
+        <div>
+          <h2 id="contact-heading">Ready to start?</h2>
+          <p>Send us a message and we’ll get back to you with a timeline and estimate.</p>
+        </div>
+        <form class="contact-form" action="#" method="post" aria-label="Contact form" id="contactForm">
+          <label class="visually-hidden" for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="Your Name" required />
+
+          <label class="visually-hidden" for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="Your Email" required />
+
+          <label class="visually-hidden" for="message">Message</label>
+          <textarea id="project" rows="4" placeholder="Tell us about your project" required></textarea>
+
+          <button class="btn btn-primary" type="submit">Send message</button>
+        </form>
+      </div>
+    </section>
+  
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-grid">
+      <p>© <span id="year"></span> Zahimo Studio — All rights reserved</p>
+      <small>Built with attention to spacing, typography, and color fidelity.</small>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
