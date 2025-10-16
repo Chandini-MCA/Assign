@@ -35,4 +35,3 @@ The site demonstrates professional front-end development standards, including pr
 
 ---
 
-## 🧩 Folder Structure
